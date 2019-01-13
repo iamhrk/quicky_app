@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Quick Note App</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://bootswatch.com/4/yeti/bootstrap.min.css">
+
+  </head>
+  <body>
+    <div class="container mt-4">
+
+        <h1 class="display-4 text-center"><i class="fas fa-sticky-note text-success display-3"></i>
+          <span class="text-danger">Quicky</span>
+        </h1>
+          <p class="text-primary display -1 text-center">A simple note app. Save your thoughts anytime.</p>
+          <form id="note-form">
+            <label for="title">Add a note title</label>
+            <input type="text" name="" id="title" class="form-control">
+
+            <label for="description">Quick Note (Optional)</label>
+            <textarea name="" id="description" rows="2" cols="30" class="form-control"></textarea>
+            <input type="submit" name="" value="Remember this!" class=" mt-2 btn btn-success btn-block form-control">
+
+          </form>
+
+          <table class="table table-striped mt-3">
+            <thead>
+                <tr>
+                  <th>Title</th>
+                  <th>Note</th>
+                  <th></th>
+                </tr>
+            </thead>
+            <tbody id="note-list">
+            </tbody>
+          </table>
+
+    </div>
+
+<script type="text/javascript" src="app.js">
+
+</script>
+
+  </body>
+</html>
